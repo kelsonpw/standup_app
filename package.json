@@ -1,5 +1,7 @@
 {
   "name": "standup_app",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "admin-lte": "^2.4.17"
+  }
 }
