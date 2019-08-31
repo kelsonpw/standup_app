@@ -1,5 +1,8 @@
-require 'rails_helper'
+require "rails_helper"
 
 RSpec.describe "support/contact.html.slim", type: :view do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it "renders the contact page" do
+    render :template => "support/contact.html.slim"
+    expect(rendered).to match /support/
+  end
 end
