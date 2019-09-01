@@ -15,7 +15,7 @@ RSpec.feature "SignUpProcesses", type: :feature do
 
     click_button("Sign Up")
 
-    expect(current_path).to eql(new_accounts_path)
+    expect(current_path).to(eql(new_accounts_path))
 
     within "#new_account" do
       fill_in("account_name", with: "Test Co")
@@ -23,7 +23,7 @@ RSpec.feature "SignUpProcesses", type: :feature do
 
     click_button("Save")
 
-    expect(current_path).to eql(root_path)
+    expect(current_path).to(eql(root_path))
   end
 
   it "should fail on invalid user information" do
@@ -39,8 +39,8 @@ RSpec.feature "SignUpProcesses", type: :feature do
 
     click_button("Sign Up")
 
-    expect(current_path).to eql("/users")
-    expect(page).to have_content("error")
+    expect(current_path).to(eql("/users"))
+    expect(page).to(have_content("error"))
   end
 
   it "should fail on invalid account information" do
