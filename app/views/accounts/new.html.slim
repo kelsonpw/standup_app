@@ -9,7 +9,7 @@
           - if @account.errors.any?
             .alert.alert-error.alert-block.alert-fixed
               h4 = "#{pluralize(@account.errors.count, "error")} prohibited this account from being saved:"
-              == @acount.errors.full_messages.sum("") { |msg| content_tag(:li, msg)}
+              == @account.errors.full_messages.sum("") { |msg| content_tag(:li, msg) }
           .form-group
             = f.label :name, class: "control-label col-lg-2"
             .col-lg-10
