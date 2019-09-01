@@ -1,5 +1,5 @@
-doctype HTML
-HTML
+doctype html
+html
   head
     title Standup Kid
     = csrf_meta_tags
@@ -9,10 +9,8 @@ HTML
     = stylesheet_link_tag href=\
     "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
 
-  body.fixed.skin-blue-light
-    .wrapper
-      = render 'layouts/navigation/layout'
-      .content-wrapper
-        = flash_messages
-        = yield
-      = render 'layouts/navigation/footer'
+  
+
+  body.login-page
+    = flash_messages
+    = yield

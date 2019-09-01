@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  get 'support/contact'
+  devise_for :users
+  resource :accounts
+
+  get "support/contact"
   get "activity/mine"
   get "activity/feed"
 
