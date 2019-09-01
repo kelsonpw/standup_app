@@ -17,6 +17,6 @@ deploy:
   app:
     master: stark-coast-64724
   on:
-    repo: YOUR_GITHUB_REPO
+    repo: kelsonpw/standup_app
   run:
     - 'rails db:migrate'
