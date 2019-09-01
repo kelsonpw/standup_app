@@ -56,6 +56,12 @@ group :development, :test do
   gem "rspec-rails", "~> 3.8"
   gem 'rails-controller-testing'
   gem 'faker'
+
+  gem 'pry'
+  gem 'pry-byebug'
+  gem 'cucumber-rails', require: false
+  gem 'database_cleaner'
+  gem 'coveralls', require: false
 end
 
 gem "simplecov", :require => false, :group => :test
