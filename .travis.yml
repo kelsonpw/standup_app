@@ -10,13 +10,3 @@ services:
   - postgresql
 notifications:
   email: false
-deploy:
-  provider: heroku
-  api_key:
-    secure: xRNLwZtSFP8vFnEx6Qu1OnsW8sMDlcSkRK+Jzer9xGfOVQcR0smjGkNhI4YGEIfibpPebcDKsyoNsrHFzHjPU5gOqMJfmkzqqovIbPc+rD0w4D58xP5/Dv7xALGKWlXpNYSkfGSnrATNo8+Ms/GrjDSDZR12vWKCFFNiNjIoC7KJ8QuS1mDLclk3WoZ/01zhEovbwwAbYIk3pJ1jPdW2H4vhWUWb7gCTqwvaAx/08AW4Xk1xEtD6ov53/EifY8o6iUNUNNMvBAHgxgmp0JR/K1BbqTiCEBafS3RBBhn8cvojQF6LWvOL9qjnUotKMnI4PyWWvcKsS2UQ7Ww5/wwIif9ezRcishqh8f8L3N6zJyxbcDC5iklrbcC3iS5NBw1TVz2JSZXoGuyJujiOiCpjH8Iuhnr7xJwJhUwKVYonGaxK+7q5u6nP/iduzRqrikEPnJBduVcaEctDZ3c+2N/gEAtk+T6GihqMBKlET0aXpugNwzzLNZ5bAout1JeN/D05iwETE4cyKwDIvUDEYt6WI2J5dxuoPV3bGLSRhU/LnD8PMx4cmUmIThQSXOyys5hLjMIXGUNovo2SlNHGhKoL7EgnpJEpPEBIRWtTEHF7ZcBomtXY9MuGLnBTD3L+3qJvZcD5HR0Qpc/qfBjY8asZTBSTknEs2/cvFiaW3gVpvAo=
-  app:
-    master: stark-coast-64724
-  on:
-    repo: kelsonpw/standup_app
-  run:
-    - 'rails db:migrate'
