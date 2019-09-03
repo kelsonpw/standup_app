@@ -104,7 +104,7 @@ class UsersController < ApplicationController
   private
 
   def set_users
-    @user = current_account.users
+    @users = current_account.users
   end
 
   def set_user
