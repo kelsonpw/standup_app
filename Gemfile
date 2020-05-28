@@ -39,7 +39,7 @@ gem "sinatra", github: "sinatra/sinatra", require: nil
 
 gem "gravatar_image_tag", "~> 1.2"
 gem "country_select", "~> 4.0"
-gem "kaminari", "~> 1.1"
+gem "kaminari", "~> 1.2"
 gem "money-rails", "~> 1.13"
 gem "ransack", "~> 2.3"
 gem "slack-notifier", "~> 2.3"
